@@ -62,7 +62,7 @@ body {
 }
 
 .movie-card img {
-  width: 160px;
+  width: 120px;
   height: 230px;
   border-radius: 10px;
   transition: 0.3s;
