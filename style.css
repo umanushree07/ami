@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #272525;
+  color: white;
+}
+
+/* HEADER */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom, #181818, #3b3d3c);
+}
+
+.logo {
+  height: 45px;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-btn {
+  padding: 12px 40px;
+  border: 2px solid #ffffff50;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+
+
+/* SECTIONS */
+.section {
+  padding: 20px;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+}
+
+/* MOVIE ROW */
+.movie-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.movie-row::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card img {
+  width: 160px;
+  height: 230px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.movie-card img:hover {
+  transform: scale(1.03);
+}
+
+/* BOTTOM NAV */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #0a0f1f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.bottom-nav div {
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.bottom-nav p {
+  margin: 2px 0 0;
+  font-size: 12px;
+}
+
+.center-logo img {
+  height: 40px;
+}
+
+footer {
+  margin-top: 70px;
+  padding: 28px;
+  text-align: center;
+  background: var(--gray-light);
+  color: #fffffffa;
+  font-size: 14px;
+}
+.movie-card p{
+text-align: center;
+font-weight: bold;
+color: white;
+}
+.header{
+  padding:15px;
+}
+
+.logo{
+  height:40px;
+}
+
+/* VIDEO SCROLL CONTAINER */
+.video-scroll{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding:20px;
+    scroll-behavior:smooth;
+}
+
+/* CARD ANIMATION WRAPPER */
+.card-bounce{
+    flex:0 0 auto;
+}
+
+/* VIDEO CARD */
+.video-card{
+    width:280px;
+    background:#111;
+    border-radius:12px;
+    overflow:hidden;
+    transition:transform 0.3s ease;
+}
+
+.video-card:hover{
+    transform:scale(1.05);
+}
+
+/* VIDEO FRAME (16:9 ratio support) */
+.video-frame{
+    position:relative;
+    width:100%;
+    padding-top:56.25%; 
+    background:#000;
+}
+
+.video-frame iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+/* VIDEO TITLE */
+.video-title{
+    color:white;
+    font-size:16px;
+    padding:10px;
+    font-weight:600;
+}
+
+/* LIKE SECTION */
+.like-section{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px;
+}
+
+/* LIKE BUTTON */
+.like-btn{
+    background:#ff0055;
+    border:none;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:14px;
+    transition:0.2s;
+}
+
+.like-btn:hover{
+    background:#ff2b6d;
+}
+
+.like-section span{
+    color:white;
+    font-size:14px;
+}
