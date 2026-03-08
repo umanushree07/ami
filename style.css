@@ -200,15 +200,15 @@ color: white;
     font-size:14px;
 }
 
-.video-card a {
+.movie-card a {
   text-decoration: none;
   color: white;
 }
 
-.video-card a:visited {
+.movie-card a:visited {
   color: white;
 }
 
-.video-card a:hover {
+.movie-card a:hover {
   color: white;
 }
