@@ -199,3 +199,16 @@ color: white;
     color:white;
     font-size:14px;
 }
+
+.video-card a {
+  text-decoration: none;
+  color: white;
+}
+
+.video-card a:visited {
+  color: white;
+}
+
+.video-card a:hover {
+  color: white;
+}
