@@ -249,3 +249,22 @@ a:active {
     padding: 5px 14px;
   }
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.home-btn {
+  padding: 6px 16px;
+  border: 2px solid #777;
+  border-radius: 25px;
+  font-size: 14px;
+}
