@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eko | AMIvault</title>
+
+<link rel="stylesheet" href="stylee.css">
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+<h1 class="title">Map of the Soul</h1>
+
+<div class="video">
+<iframe src="https://ok.ru/videoembed/3948392876774"
+allowfullscreen>
+</iframe>
+</div>
+
+<button class="like-btn" onclick="likeMovie()">
+Like <span id="like-count">0</span>
+</button>
+
+<p class="description">
+
+“Map of the Soul ON:E” is a powerful online concert by BTS that brings their Map of the Soul era to life with stunning stage production and performances of their biggest songs. The concert showcases BTS’s energy, storytelling, and their strong connection with ARMY around the world.
+
+</p>
+
+<div class="details">
+
+<p><span>Year:</span> 2020</p>
+
+<p><span>Languages:</span> Korean</p>
+
+<p><span>Members:</span> RM,JIN,SUGA,JHOPE,JIMIN,V,JUNGKOOK</p>
+
+<p><span>Genre:</span> Live Performance</p>
+
+
+</div>
+
+</div>
+
+<script>
+
+let likes = localStorage.getItem("movieLikes");
+
+if(likes === null){
+likes = 0;
+}
+
+document.getElementById("like-count").innerText = likes;
+
+function likeMovie(){
+likes++;
+localStorage.setItem("movieLikes", likes);
+document.getElementById("like-count").innerText = likes;
+}
+
+</script>
+
+</body>
+</html>
