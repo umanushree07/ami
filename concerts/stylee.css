@@ -311,10 +311,10 @@ font-weight:bold;
 
 .video-container{
   display:flex;
-  gap:5px;
+  gap:20px;
   overflow-x:auto;
   scroll-snap-type:x mandatory;
-  padding:15px;
+  padding:25px;
 }
 
 .video-card{
