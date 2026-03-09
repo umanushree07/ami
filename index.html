@@ -26,12 +26,12 @@
     <div class="movie-row">
        
  
-     <div class="movie-card">
+<a href="#" class="movie-card" onclick="showUpcomingMessage(event)">
       <img src="images/live.png">
 <p class="movie-title">ARIRANG Live</p>
-        </div>
+        </a>
 
-<div class="movie-card">
+<a href="#" class="movie-card" onclick="showUpcomingMessage(event)">
             <img src="images/the.png">
              <p class="movie-title">BTS THE RETURN </p>
         </div>
@@ -183,6 +183,14 @@
   <p>© 2026 Ami Vault | BTS Contents </p>
 
 </footer>
-<script src="script.js"></script>
+<script 
+function showUpcomingMessage(event) {
+  event.preventDefault();
+  alert("This concert will be uploaded soon on AMI Vault. Stay tuned!");
+}
+
+
+
+</script>
 </body>
   </html>
