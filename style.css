@@ -223,3 +223,19 @@ color: white;
   text-decoration: none;
   color: white;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.movie-title {
+  text-decoration: none;
+  color: white;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none !important;
+  color: white;
+}
