@@ -1,60 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>BTS Monument: Beyond the Star</title>
+
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eko | AMIstream</title>
+
 <link rel="stylesheet" href="../style.css">
+
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header class="header">
-    <img src="../images/logo.png" class="logo">
-</header>
+<div class="container">
 
-<h2 class="section-title">BTS Monument: Beyond the Star</h2>
+<h1 class="title">Eko</h1>
 
-<!-- VIDEO CARDS -->
-
- <div class="video-scroll">
-
-<div class="card-bounce">
-
- <div class="video-card">
-
- 
-  <!-- Thumbnail -->
-
-  <!-- Video iframe (hidden initially) -->
- 
-<div style="position:relative;padding-top:56.25%;">
-
-<iframe
-src="https://ok.ru/videoembed/5064486095590"
-style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-allowfullscreen
-scrolling="no">
+<div class="video">
+<iframe src="https://ok.ru/videoembed/14788129262130"
+allowfullscreen>
 </iframe>
+</div>
+
+<button class="like-btn" onclick="likeMovie()">
+👍 Like <span id="like-count">0</span>
+</button>
+
+<p class="description">
+
+In the misty hills of Kerala, the search for an enigmatic dog breeder
+pulls his wife and caretaker into a world of danger and murky secrets.
+
+</p>
+
+<div class="details">
+
+<p><span>Year:</span> 2025</p>
+
+<p><span>Languages:</span> Malayalam, Hindi, Tamil, Telugu</p>
+
+<p><span>Director:</span> Dinjith Ayyathan</p>
+
+<p><span>Cast:</span> Sandeep Pradeep, Biana Momin, Narain</p>
+
+<p><span>Genre:</span> Drama, Thriller</p>
+
+<p><span>Duration:</span> 2h 5m</p>
 
 </div>
 
-  <!-- Title -->
-  <h4 class="video-title">BTS Monument Ep 1: The Beginning</h4>
-
-  <!-- Like -->
-  <div class="like-section">
-    <button class="like-btn" onclick="likePost(this)" data-id="video21">
-      ❤️ <span>0</span>
-    </button>
-  </div>
-</div><div>
-
 </div>
-<!-- FOOTER -->
 
+<script>
 
-<script src="script.js"></script>
+let likes = 0;
+
+function likeMovie(){
+likes++;
+document.getElementById("like-count").innerText = likes;
+}
+
+</script>
 
 </body>
 </html>
