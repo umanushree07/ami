@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eko | AMIstream</title>
+
+<link rel="stylesheet" href="stylee.css">
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+<h1 class="title">Permission to Dance</h1>
+
+<div class="video">
+<iframe src="https://ok.ru/videoembed/4532316801766"
+allowfullscreen>
+</iframe>
+</div>
+
+<button class="like-btn" onclick="likeMovie()">
+Like <span id="like-count">0</span>
+</button>
+
+<p class="description">
+
+“Permission to Dance On Stage Seoul” is a special live concert by BTS held in Seoul, South Korea. The show features powerful performances of their biggest hit songs and celebrates BTS’s music and their connection with ARMY around the world.
+
+</p>
+
+<div class="details">
+
+<p><span>Year:</span> 2022</p>
+
+<p><span>Languages:</span> Korean</p>
+
+<p><span>Members:</span> RM,JIN,SUGA,JHOPE,JIMIN,V,JUNGKOOK</p>
+
+<p><span>Genre:</span> Live Performance</p>
+
+
+</div>
+
+</div>
+
+<script>
+
+let likes = localStorage.getItem("movieLikes");
+
+if(likes === null){
+likes = 0;
+}
+
+document.getElementById("like-count").innerText = likes;
+
+function likeMovie(){
+likes++;
+localStorage.setItem("movieLikes", likes);
+document.getElementById("like-count").innerText = likes;
+}
+
+</script>
+
+</body>
+</html>
