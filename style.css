@@ -212,3 +212,14 @@ color: white;
 .movie-card a:hover {
   color: white;
 }
+.movie-card {
+  text-decoration: none;
+  color: white;
+}
+.movie-card,
+.movie-card:visited,
+.movie-card:hover,
+.movie-card:active {
+  text-decoration: none;
+  color: white;
+}
