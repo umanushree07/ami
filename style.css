@@ -15,7 +15,7 @@ body {
 }
 
 .logo {
-  height: 30px;
+  height: 20px;
 }
 
 .nav-center {
@@ -25,12 +25,12 @@ body {
 }
 
 .nav-btn {
-  padding: 10px 35px;
+  padding: 10px 25px;
   border: 2px solid #ffffff50;
-  border-radius: 25px;
+  border-radius: 15px;
   text-decoration: none;
   color: white;
-  font-size: 15px;
+  font-size: 12px;
   transition: 0.3s;
 }
 
