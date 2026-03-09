@@ -51,10 +51,17 @@ Like <span id="like-count">0</span>
 
 <script>
 
-let likes = 0;
+let likes = localStorage.getItem("movieLikes");
+
+if(likes === null){
+likes = 0;
+}
+
+document.getElementById("like-count").innerText = likes;
 
 function likeMovie(){
 likes++;
+localStorage.setItem("movieLikes", likes);
 document.getElementById("like-count").innerText = likes;
 }
 
