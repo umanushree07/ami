@@ -311,14 +311,14 @@ font-weight:bold;
 
 .video-container{
   display:flex;
-  gap:20px;
+  gap:10px;
   overflow-x:auto;
   scroll-snap-type:x mandatory;
-  padding:30px;
+  padding:20px;
 }
 
 .video-card{
-  min-width:97%;
+  min-width:98%;
   scroll-snap-align:start;
 }
 
