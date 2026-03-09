@@ -302,3 +302,13 @@ line-height:24px;
 color:white;
 font-weight:bold;
 }
+.container-scroll{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.container-scroll .container{
+flex:1;
+min-width:250px;
+}
