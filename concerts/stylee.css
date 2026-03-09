@@ -317,3 +317,14 @@ flex-wrap:wrap;
 flex:1;
 min-width:250px;
 }
+
+.video-container{
+  display:flex;
+  gap:30px;
+  padding:20px;
+}
+
+.video-card{
+  flex:1;
+  color:white;
+}
