@@ -307,24 +307,21 @@ line-height:24px;
 color:white;
 font-weight:bold;
 }
-.container-scroll{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
 
-.container-scroll .container{
-flex:1;
-min-width:250px;
-}
 
 .video-container{
   display:flex;
-  gap:40px;
+  gap:20px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
   padding:20px;
 }
 
 .video-card{
-  flex:1;
-  color:white;
+  min-width:85%;
+  scroll-snap-align:start;
+}
+
+.video-container::-webkit-scrollbar{
+  display:none;
 }
