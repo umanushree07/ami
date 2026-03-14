@@ -325,3 +325,17 @@ font-weight:bold;
 .video-container::-webkit-scrollbar{
   display:none;
 }
+.tabs{
+  display:flex;
+  gap:20px;
+  padding:15px;
+  border-bottom:2px solid #444;
+}
+
+.tabs span{
+  cursor:pointer;
+}
+
+.tabs .active{
+  border-bottom:3px solid red;
+}
