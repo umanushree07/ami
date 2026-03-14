@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AMIvault</title>
+
+<link rel="stylesheet" href="stylee.css">
+
+</head>
+
+<body>
+
+
+<div class="series-banner">
+  <img src="../images/still.jpg" class="banner-img">
+
+  <div class="banner-content">
+    <h1>I AM STILL</h1>
+    
+  </div>
+</div>
+
+<div class="tabs">
+  <span class="active">Episodes</span>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/9908922747622')">
+<img src="../images/still.jpg">
+<div class="episode-info">
+<h3>Episode 1 – Departure</h3>
+</div>
+</div>
+
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/9908922813158')">
+<img src="../images/still.jpg">
+<div class="episode-info">
+<h3>Episode 2 – VIA</h3>
+<p>61m</p>
+</div>
+</div>
+
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/9908922682086')">
+<img src="../images/still.jpg">
+<div class="episode-info">
+<h3>Episode 3 – RISE</h3>
+<p>56m</p>
+</div>
+</div>
+
+
+
+<div id="videoPopup" class="popup">
+
+<span class="close" onclick="closePlayer()">✕</span>
+
+<iframe id="videoFrame" allowfullscreen></iframe>
+
+</div>
+
+<script>
+
+function openPlayer(video){
+document.getElementById("videoPopup").style.display="flex";
+document.getElementById("videoFrame").src=video;
+}
+
+function closePlayer(){
+document.getElementById("videoPopup").style.display="none";
+document.getElementById("videoFrame").src="";
+}
+
+</script>
+
+</body>
+</html>
