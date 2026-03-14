@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AMIvault</title>
+
+<link rel="stylesheet" href="stylee.css">
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+<h1 class="title">Right People Wrong Place</h1>
+
+<div class="video">
+<iframe src="https://ok.ru/videoembed/10305396542182"
+allowfullscreen>
+</iframe>
+</div>
+
+<button class="like-btn" onclick="likeMovie()">
+Like <span id="like-count">0</span>
+</button>
+
+<p class="description">
+
+Right Place, Wrong Person is the second studio album by South Korean rapper RM of BTS, released on May 24, 2024, through Big Hit Music
+
+</p>
+
+<div class="details">
+
+<p><span>Year:</span> 2024</p>
+
+<p><span>Languages:</span> Korean</p>
+
+<p><span>Members:</span> RM </p>
+
+<p><span>Genre:</span> Documentary </p>
+
+
+</div>
+
+</div>
+
+<script>
+
+let likes = localStorage.getItem("movieLikes");
+
+if(likes === null){
+likes = 0;
+}
+
+document.getElementById("like-count").innerText = likes;
+
+function likeMovie(){
+likes++;
+localStorage.setItem("movieLikes", likes);
+document.getElementById("like-count").innerText = likes;
+}
+
+</script>
+
+</body>
+</html>
