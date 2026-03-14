@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AMIvault</title>
+
+<link rel="stylesheet" href="stylee.css">
+
+</head>
+
+<body>
+
+
+<div class="series-banner">
+  <img src="../images/monu.jpg" class="banner-img">
+
+  <div class="banner-content">
+    <h1>BREAK THE SILENCE</h1>
+    
+  </div>
+</div>
+
+<div class="tabs">
+  <span class="active">Episodes</span>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/5235512838886')">
+<img src="../images/monu.jpg">
+<div class="episode-info">
+<h3>BREAK THE SILENCE: MOVIE</h3>
+</div>
+</div>
+
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/7758988118758')">
+<img src="../images/monu.jpg">
+<div class="episode-info">
+<h3>Episode 1 – Still going on together</h3>
+<p>61m</p>
+</div>
+</div>
+
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/14802508909106')">
+<img src="../images/monu.jpg">
+<div class="episode-info">
+<h3>Episode 2 – You can call me IDOL</h3>
+<p>56m</p>
+</div>
+</div>
+
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/14803004164658')">
+<img src="../images/monu.jpg">
+<div class="episode-info">
+<h3>Episode 3 – Way to Work</h3>
+<p>56m</p>
+</div>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/14802073553458')">
+<img src="../images/monu.jpg">
+<div class="episode-info">
+<h3>Episode 4 – Speak Yourself</h3>
+<p>56m</p>
+</div>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/14789790075442')">
+<img src="../images/monu.jpg">
+<div class="episode-info">
+<h3>Episode 5 – The Opposite Side</h3>
+<p>56m</p>
+</div>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/14789327522354')">
+<img src="../images/monu.jpg">
+<div class="episode-info">
+<h3>Episode 6 – Now and Tomorrow</h3>
+<p>56m</p>
+</div>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/7838854154982')">
+<img src="../images/monu.jpg">
+<div class="episode-info">
+<h3>Episode 7 – We Walked Together</h3>
+<p>56m</p>
+</div>
+</div>
+
+<div id="videoPopup" class="popup">
+
+<span class="close" onclick="closePlayer()">✕</span>
+
+<iframe id="videoFrame" allowfullscreen></iframe>
+
+</div>
+
+<script>
+
+function openPlayer(video){
+document.getElementById("videoPopup").style.display="flex";
+document.getElementById("videoFrame").src=video;
+}
+
+function closePlayer(){
+document.getElementById("videoPopup").style.display="none";
+document.getElementById("videoFrame").src="";
+}
+
+</script>
+
+</body>
+</html>
