@@ -366,3 +366,8 @@ font-size:30px;
 color:white;
 cursor:pointer;
 }
+.banner{
+width:100%;
+height:45vh;
+object-fit:cover;
+}
