@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Eko | AMIstream</title>
+<title>AMIvault</title>
 
 <link rel="stylesheet" href="stylee.css">
 
@@ -14,276 +14,87 @@
 <body>
 
 
-<div class="video-container">
-<div class="video-card"
+<div class="series-banner">
+  <img src="../images/run.jpg" class="banner-img">
 
-<br>
-<h1 class="title">Run Seokjin Ep Encore Day1</h1>
-
-<div class="video">
-<iframe src="https://ok.ru/videoembed/11074059504358"
-allowfullscreen>
-</iframe>
+  <div class="banner-content">
+    <h1>Run Seokjin Ep </h1>
+    
+  </div>
 </div>
 
-<button class="like-btn" onclick="likeMovie()">
-Like <span id="like-count">0</span>
-</button>
-
-<p class="description">
-
-“Run Seokjin Encore” is a special live event featuring Jin from BTS, celebrating his return and reconnecting with fans through music, games, and fun moments. The show brings together performances, heartfelt talks, and memorable interactions with ARMY.
-
-</p>
-
-<div class="details">
-
-<p><span>Year:</span> 2025</p>
-
-<p><span>Languages:</span> Korean</p>
-
-<p><span>Members:</span> JIN </p>
-
-<p><span>Genre:</span> Live Performance</p>
-
-
+<div class="tabs">
+  <span class="active">Concerts</span>
 </div>
 
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/10550372993766')">
+<img src="../images/run.jpg">
+<div class="episode-info">
+<h3>RunSeokjin Goyang Day1</h3>
+</div>
 </div>
 
-<script>
 
-let likes = localStorage.getItem("movieLikes");
-
-if(likes === null){
-likes = 0;
-}
-
-document.getElementById("like-count").innerText = likes;
-
-function likeMovie(){
-likes++;
-localStorage.setItem("movieLikes", likes);
-document.getElementById("like-count").innerText = likes;
-}
-
-</script>
-
-<div class="video-card"
-
-<br>
-<h1 class="title">Run Seokjin Ep Encore Day2</h1>
-
-<div class="video">
-<iframe src="https://ok.ru/videoembed/11099043924710"
-allowfullscreen>
-</iframe>
-</div>
-
-<button class="like-btn" onclick="likeMovie()">
-Like <span id="like-count">0</span>
-</button>
-
-<p class="description">
-
-“Run Seokjin Encore” is a special live event featuring Jin from BTS, celebrating his return and reconnecting with fans through music, games, and fun moments. The show brings together performances, heartfelt talks, and memorable interactions with ARMY.
-
-</p>
-
-<div class="details">
-
-<p><span>Year:</span> 2025</p>
-
-<p><span>Languages:</span> Korean</p>
-
-<p><span>Members:</span> JIN </p>
-
-<p><span>Genre:</span> Live Performance</p>
-
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11099043924710')">
+<img src="../images/run.jpg">
+<div class="episode-info">
+<h3>RunSeokjin Ep Goyang Day2</h3>
 
 </div>
 </div>
 
 
-<script>
-
-let likes = localStorage.getItem("movieLikes");
-
-if(likes === null){
-likes = 0;
-}
-
-document.getElementById("like-count").innerText = likes;
-
-function likeMovie(){
-likes++;
-localStorage.setItem("movieLikes", likes);
-document.getElementById("like-count").innerText = likes;
-}
-
-</script>
-
-
-<div class="video-card"
-
-<br>
-<h1 class="title">Run Seokjin Ep Japan</h1>
-
-<div class="video">
-<iframe src="https://ok.ru/videoembed/11616034097735"
-allowfullscreen>
-</iframe>
-</div>
-
-<button class="like-btn" onclick="likeMovie()">
-Like <span id="like-count">0</span>
-</button>
-
-<p class="description">
-
-“Run Seokjin” is a special live event featuring Jin from BTS, celebrating his return and reconnecting with fans through music, games, and fun moments. The show brings together performances, heartfelt talks, and memorable interactions with ARMY.
-
-</p>
-
-<div class="details">
-
-<p><span>Year:</span> 2025</p>
-
-<p><span>Languages:</span> Korean</p>
-
-<p><span>Members:</span> JIN </p>
-
-<p><span>Genre:</span> Live Performance</p>
-
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11616034097735')">
+<img src="../images/run.jpg">
+<div class="episode-info">
+<h3>RunSeokjin Ep Japan</h3>
 
 </div>
 </div>
 
 
-<script>
-
-let likes = localStorage.getItem("movieLikes");
-
-if(likes === null){
-likes = 0;
-}
-
-document.getElementById("like-count").innerText = likes;
-
-function likeMovie(){
-likes++;
-localStorage.setItem("movieLikes", likes);
-document.getElementById("like-count").innerText = likes;
-}
-
-</script>
-
-<div class="video-card"
-
-<br>
-<h1 class="title">Run Seokjin Ep Goyang Day 1 </h1>
-
-<div class="video">
-<iframe src="https://ok.ru/videoembed/10550372993766"
-allowfullscreen>
-</iframe>
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/5064486095590')">
+<img src="../images/run.jpg">
+<div class="episode-info">
+<h3>RunSeokjin Ep Encore Day1</h3>
+</div>
 </div>
 
-<button class="like-btn" onclick="likeMovie()">
-Like <span id="like-count">0</span>
-</button>
-
-<p class="description">
-
-“Run Seokjin” is a special live event featuring Jin from BTS, celebrating his return and reconnecting with fans through music, games, and fun moments. The show brings together performances, heartfelt talks, and memorable interactions with ARMY.
-
-</p>
-
-<div class="details">
-
-<p><span>Year:</span> 2025</p>
-
-<p><span>Languages:</span> Korean</p>
-
-<p><span>Members:</span> JIN </p>
-
-<p><span>Genre:</span> Live Performance</p>
-
-
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11074059504358')">
+<img src="../images/run.jpg">
+<div class="episode-info">
+<h3>RunSeokjin Ep Encore Day 2</h3>
 </div>
 </div>
 
 
-<script>
 
-let likes = localStorage.getItem("movieLikes");
+<div id="videoPopup" class="popup">
 
-if(likes === null){
-likes = 0;
-}
+<span class="close" onclick="closePlayer()">✕</span>
 
-document.getElementById("like-count").innerText = likes;
+<iframe id="videoFrame" allowfullscreen></iframe>
 
-function likeMovie(){
-likes++;
-localStorage.setItem("movieLikes", likes);
-document.getElementById("like-count").innerText = likes;
-}
-
-</script>
-
-<div class="video-card"
-
-<br>
-<h1 class="title">Run Seokjin Ep Goyang Day2</h1>
-
-<div class="video">
-<iframe src="https://ok.ru/videoembed/11099043924710"
-allowfullscreen>
-</iframe>
-</div>
-
-<button class="like-btn" onclick="likeMovie()">
-Like <span id="like-count">0</span>
-</button>
-
-<p class="description">
-
-“Run Seokjin” is a special live event featuring Jin from BTS, celebrating his return and reconnecting with fans through music, games, and fun moments. The show brings together performances, heartfelt talks, and memorable interactions with ARMY.
-
-</p>
-
-<div class="details">
-
-<p><span>Year:</span> 2025</p>
-
-<p><span>Languages:</span> Korean</p>
-
-<p><span>Members:</span> JIN </p>
-
-<p><span>Genre:</span> Live Performance</p>
-
-
-</div>
-</div>
 </div>
 
 <script>
 
-let likes = localStorage.getItem("movieLikes");
-
-if(likes === null){
-likes = 0;
+function openPlayer(video){
+document.getElementById("videoPopup").style.display="flex";
+document.getElementById("videoFrame").src=video;
 }
 
-document.getElementById("like-count").innerText = likes;
-
-function likeMovie(){
-likes++;
-localStorage.setItem("movieLikes", likes);
-document.getElementById("like-count").innerText = likes;
+function closePlayer(){
+document.getElementById("videoPopup").style.display="none";
+document.getElementById("videoFrame").src="";
 }
 
 </script>
+
 </body>
 </html>
