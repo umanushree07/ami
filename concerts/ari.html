@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AMIvault</title>
+
+<link rel="stylesheet" href="stylee.css">
+
+</head>
+
+<body>
+
+
+<div class="series-banner">
+  <img src="../images/a735f88092773ba2c26fe89d5fd0807e.jpg" class="banner-img">
+
+  <div class="banner-content">
+    <h1>BTS ARIRANG WORLD TOUR</h1>
+    
+  </div>
+</div>
+
+<div class="tabs">
+  <span class="active">Vi</span>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11663695416038')">
+<img src="../images/ays2.jpg">
+<div class="episode-info">
+<h3>Episode 1</h3>
+</div>
+</div>
+
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11667414977254')">
+<img src="../images/ays2.jpg">
+<div class="episode-info">
+<h3>Episode 2 </h3>
+
+</div>
+</div>
+
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11664945187558')">
+<img src="../images/ays2.jpg">
+<div class="episode-info">
+<h3>Episode 3 </h3>
+
+</div>
+</div>
+
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11666988403430')">
+<img src="../images/ays2.jpg">
+<div class="episode-info">
+<h3>Episode 4 </h3>
+</div>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11668204620518')">
+<img src="../images/ays2.jpg">
+<div class="episode-info">
+<h3>Episode 5</h3>
+</div>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11666988337894')">
+<img src="../images/ays2.jpg">
+<div class="episode-info">
+<h3>Episode 6</h3>
+
+</div>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11684348693222')">
+<img src="../images/ays2.jpg">
+<div class="episode-info">
+<h3>Episode 7</h3>
+</div>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/11685132765926')">
+<img src="../images/ays2.jpg">
+<div class="episode-info">
+<h3>Episode 8</h3>
+</div>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/7838854154982')">
+<img src="../images/ays2.jpg">
+<div class="episode-info">
+<h3> Are you sure S2 Behind </h3>
+</div>
+</div>
+
+<div id="videoPopup" class="popup">
+
+<span class="close" onclick="closePlayer()">✕</span>
+
+<iframe id="videoFrame" allowfullscreen></iframe>
+
+</div>
+
+<script>
+
+function openPlayer(video){
+document.getElementById("videoPopup").style.display="flex";
+document.getElementById("videoFrame").src=video;
+}
+
+function closePlayer(){
+document.getElementById("videoPopup").style.display="none";
+document.getElementById("videoFrame").src="";
+}
+
+</script>
+
+</body>
+</html>
