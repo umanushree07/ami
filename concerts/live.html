@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AMIvault</title>
+
+<link rel="stylesheet" href="stylee.css">
+
+</head>
+
+<body>
+
+
+<div class="series-banner">
+  <img src="../images/live.png" class="banner-img">
+
+  <div class="banner-content">
+    <h1>BTS Comeback Live</h1>
+    
+  </div>
+</div>
+
+<div class="tabs">
+  <span class="active">Concerts</span>
+</div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/15084078303892')">
+<img src="../images/live.png">
+<div class="episode-info">
+<h3>Comeback live</h3>
+</div>
+</div>
+
+
+
+
+
+
+<div id="videoPopup" class="popup">
+
+<span class="close" onclick="closePlayer()">✕</span>
+
+<iframe id="videoFrame" allowfullscreen></iframe>
+
+</div>
+
+<script>
+
+function openPlayer(video){
+document.getElementById("videoPopup").style.display="flex";
+document.getElementById("videoFrame").src=video;
+}
+
+function closePlayer(){
+document.getElementById("videoPopup").style.display="none";
+document.getElementById("videoFrame").src="";
+}
+
+</script>
+
+</body>
+</html>
