@@ -14,55 +14,47 @@
 <body>
 
 
-<div class="container">
+<div class="series-banner">
+  <img src="../images/ytc.jpg" class="banner-img">
 
-<h1 class="title">Yet To Come</h1>
-
-<div class="video">
-<iframe src="https://ok.ru/videoembed/5064486095590"
-allowfullscreen>
-</iframe>
+  <div class="banner-content">
+    <h1>Yet to Come Busan</h1>
+    
+  </div>
 </div>
 
-<button class="like-btn" onclick="likeMovie()">
-Like <span id="like-count">0</span>
-</button>
-
-<p class="description">
-
-“Yet To Come in Busan” is a special live concert by BTS held in Busan, South Korea, supporting the city’s bid for the World Expo 2030. The concert features powerful performances of their hit songs and celebrates BTS’s journey with fans around the world.
-
-</p>
-
-<div class="details">
-
-<p><span>Year:</span> 2022</p>
-
-<p><span>Languages:</span> Korean</p>
-
-<p><span>Members:</span> RM,JIN,SUGA,JHOPE,JIMIN,V,JUNGKOOK</p>
-
-<p><span>Genre:</span> Live Performance</p>
-
-
+<div class="tabs">
+  <span class="active">Concerts</span>
 </div>
+
+<div class="episode-card"
+onclick="openPlayer('https://ok.ru/videoembed/5064486095590')">
+<img src="../images/ytc.jpg">
+<div class="episode-info">
+<h3>Yet to Come Busan</h3>
+</div>
+</div>
+
+
+
+<div id="videoPopup" class="popup">
+
+<span class="close" onclick="closePlayer()">✕</span>
+
+<iframe id="videoFrame" allowfullscreen></iframe>
 
 </div>
 
 <script>
 
-let likes = localStorage.getItem("movieLikes");
-
-if(likes === null){
-likes = 0;
+function openPlayer(video){
+document.getElementById("videoPopup").style.display="flex";
+document.getElementById("videoFrame").src=video;
 }
 
-document.getElementById("like-count").innerText = likes;
-
-function likeMovie(){
-likes++;
-localStorage.setItem("movieLikes", likes);
-document.getElementById("like-count").innerText = likes;
+function closePlayer(){
+document.getElementById("videoPopup").style.display="none";
+document.getElementById("videoFrame").src="";
 }
 
 </script>
