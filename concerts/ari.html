@@ -96,7 +96,13 @@ onclick="openPlayer('https://t.me/btsmomentz/76')">
 </script>
 
 
-
+<div class="episode-card"
+onclick="openTelegramPost('btsmomentz, '76')">
+    <img src="../images/ariii.jpg">
+    <div class="episode-info">
+        <h3>Arirang in laaa 13062026</h3>
+    </div>
+</div>
 
 
 <div id="videoPopup" class="popup">
@@ -119,6 +125,28 @@ document.getElementById("videoPopup").style.display="none";
 document.getElementById("videoFrame").src="";
 }
 
+</script>
+
+<script>
+function openTelegramPost(channel, postId) {
+    document.getElementById("videoPopup").style.display = "flex";
+
+    const container = document.getElementById("videoFrame");
+    container.innerHTML = "";
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://telegram.org/js/telegram-widget.js?22";
+    script.setAttribute("data-telegram-post", channel + "/" + postId);
+    script.setAttribute("data-width", "100%");
+
+    container.appendChild(script);
+}
+
+function closePlayer() {
+    document.getElementById("videoPopup").style.display = "none";
+    document.getElementById("videoFrame").innerHTML = "";
+}
 </script>
 
 </body>
