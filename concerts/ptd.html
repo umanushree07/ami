@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AMIvault</title>
+<title>btsmomentz</title>
 
 <link rel="stylesheet" href="stylee.css">
 
@@ -14,55 +14,79 @@
 <body>
 
 
-<div class="container">
+<div class="banner-content">
+    <h1>Permission to dance</h1>
 
-<h1 class="title">Permission to Dance</h1>
-
-<div class="video">
-<iframe src="https://ok.ru/videoembed/4532316801766"
-allowfullscreen>
-</iframe>
+  </div>
 </div>
 
-<button class="like-btn" onclick="likeMovie()">
-Like <span id="like-count">0</span>
-</button>
-
-<p class="description">
-
-“Permission to Dance On Stage Seoul” is a special live concert by BTS held in Seoul, South Korea. The show features powerful performances of their biggest hit songs and celebrates BTS’s music and their connection with ARMY around the world.
-
-</p>
-
-<div class="details">
-
-<p><span>Year:</span> 2022</p>
-
-<p><span>Languages:</span> Korean</p>
-
-<p><span>Members:</span> RM,JIN,SUGA,JHOPE,JIMIN,V,JUNGKOOK</p>
-
-<p><span>Genre:</span> Live Performance</p>
-
-
+<div class="tabs">
+  <span class="active">Concerts</span>
 </div>
+
+
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/126', '_blank')">
+<div class="episode-info">
+<h3>PTD Seoul Day 1 </h3>
+</div>
+</div>
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/127', '_blank')">
+<div class="episode-info">
+<h3>PTD Seoul Day 3</h3>
+</div>
+</div>
+
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/128', '_blank')">
+<div class="episode-info">
+<h3>PTD LV Day 1</h3>
+</div>
+</div>
+
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/129', '_blank')">
+<div class="episode-info">
+<h3>PTD LV Day 3</h3>
+</div>
+</div>
+
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/130', '_blank')">
+<div class="episode-info">
+<h3>PTD LV Day 4</h3>
+</div>
+</div>
+
+
+
+
+
+
+<div id="videoPopup" class="popup">
+
+<span class="close" onclick="closePlayer()">✕</span>
+
+<iframe id="videoFrame" allowfullscreen></iframe>
 
 </div>
 
 <script>
 
-let likes = localStorage.getItem("movieLikes");
-
-if(likes === null){
-likes = 0;
+function openPlayer(video){
+document.getElementById("videoPopup").style.display="flex";
+document.getElementById("videoFrame").src=video;
 }
 
-document.getElementById("like-count").innerText = likes;
-
-function likeMovie(){
-likes++;
-localStorage.setItem("movieLikes", likes);
-document.getElementById("like-count").innerText = likes;
+function closePlayer(){
+document.getElementById("videoPopup").style.display="none";
+document.getElementById("videoFrame").src="";
 }
 
 </script>
