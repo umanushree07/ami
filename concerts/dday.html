@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>btsmomentz</title>
+
+<link rel="stylesheet" href="stylee.css">
+
+</head>
+
+<body>
+
+
+<div class="banner-content">
+    <h1>D-Day</h1>
+
+  </div>
+</div>
+
+<div class="tabs">
+  <span class="active">Concerts</span>
+</div>
+
+
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/132', '_blank')">
+<div class="episode-info">
+<h3>Dday Seoul Day 1</h3>
+</div>
+</div>
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/133', '_blank')">
+<div class="episode-info">
+<h3>Dday Seoul Day 2</h3>
+</div>
+</div>
+
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/134', '_blank')">
+<div class="episode-info">
+<h3>Dday Japan</h3>
+</div>
+</div>
+
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/135', '_blank')">
+<div class="episode-info">
+<h3>Dday Encore Day 1</h3>
+</div>
+</div>
+
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/136', '_blank')">
+<div class="episode-info">
+<h3>Dday Encore Day 2</h3>
+</div>
+</div>
+
+
+<div class="episode-card"
+  onclick="window.open('https://t.me/btsmomentz/137', '_blank')">
+<div class="episode-info">
+<h3>Dday Encore Day 3</h3>
+</div>
+</div>
+
+
+
+
+
+
+<div id="videoPopup" class="popup">
+
+<span class="close" onclick="closePlayer()">✕</span>
+
+<iframe id="videoFrame" allowfullscreen></iframe>
+
+</div>
+
+<script>
+
+function openPlayer(video){
+document.getElementById("videoPopup").style.display="flex";
+document.getElementById("videoFrame").src=video;
+}
+
+function closePlayer(){
+document.getElementById("videoPopup").style.display="none";
+document.getElementById("videoFrame").src="";
+}
+
+</script>
+
+</body>
+</html>
